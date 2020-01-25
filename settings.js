@@ -55,7 +55,7 @@ var settings = module.exports = {
     // Disbled Credential Secret
     credentialSecret: false
 }
-
+settings.apiMaxLength = '20mb';
 if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
     settings.adminAuth = {
         type: "credentials",
